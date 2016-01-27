@@ -2,6 +2,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Seti_UI/Scheme/Seti.tmTheme",
 	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -14,6 +15,7 @@
 		".Spotlight-V100",
 		".Trashes"
 	],
+	"find_selected_text": true,
 	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
@@ -24,7 +26,7 @@
 		"node_modules"
 	],
 	"font_face": "PT Mono",
-	"font_size": 14,
+	"font_size": 12,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":

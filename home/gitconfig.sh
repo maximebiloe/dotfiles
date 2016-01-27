@@ -1,9 +1,9 @@
 [user]
-  name = Julien Bourdeau
-  email = julien@sigerr.org
+  name = Maxime Biloé
+  email = maxime.biloe@gmail.com
 
 [github]
-  user = julienbourdeau
+  user = maximebiloe
 
 [color]
   ui = auto
@@ -57,7 +57,7 @@
 
 [core]
   pager = cat
-  editor = atom --wait
+  editor = sublime -w
   mergeoptions = --no-edit
   # Treat spaces before tabs and all kinds of trailing whitespace as an error
   # [default] trailing-space: looks for spaces at the end of a line
@@ -69,7 +69,7 @@
   # Prevent showing files whose names contain non-ASCII symbols as unversioned.
   # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
   precomposeunicode = false
-  excludesfile = /Users/julien/.gitignore_global
+  excludesfile = /Users/mbiloe/.gitignore_global
 
 [apply]
   # Detect whitespace errors when applying a patch
@@ -102,7 +102,7 @@
   prompt = false
 
 [pull]
-  # This is GREAT… when you know what you're doing and are careful
+  # This is GREAT... when you know what you're doing and are careful
   # not to pull --no-rebase over a local line containing a true merge.
   # rebase = true
   # WARNING! This option, which does away with the one gotcha of
@@ -147,15 +147,15 @@
 
   insteadOf = "gist:"
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [mergetool "p4mergetool"]
   cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
   trustExitCode = false
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true

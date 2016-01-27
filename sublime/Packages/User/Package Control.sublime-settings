@@ -29,6 +29,7 @@
 		"Smarty",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-phpcs",
 		"Theme - Tech49",
 		"Unicode Character Highlighter"
 	]
