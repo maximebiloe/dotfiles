@@ -13,6 +13,7 @@ fe80::1%lo0         localhost
 127.0.0.1   prestashop-1.6.1.x.com
 127.0.0.1   phpmyadmin.dev
 127.0.0.1   adminer.dev
+127.0.0.1   neolegend.dev
 #</dev>
 
 10.2.24.71 v3staging.prestashop.com
