@@ -19,6 +19,7 @@ brew cask install vlc
 brew cask install spotify
 brew cask install google-drive
 brew cask install teamviewer
+brew cask install whatsapp
 
 
 # Install QuickView
