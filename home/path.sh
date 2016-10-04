@@ -1,5 +1,8 @@
 # Homebrew bin directories
-export PATH="~/.bin:/usr/local/bin:/usr/local/sbin:$PATH";
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH";
+
+#custom path
+export PATH="~/.bin:$PATH";
 
 # Use GNU utils
 PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
