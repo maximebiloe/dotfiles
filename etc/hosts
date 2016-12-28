@@ -7,15 +7,17 @@ fe80::1%lo0         localhost
 255.255.255.255     broadcasthost
 
 #<dev>
-127.0.0.1   prestashop-develop.com
-127.0.0.1   prestashop-startertheme.com
-127.0.0.1   prestashop-classic.com
-127.0.0.1   prestashop-1.6.1.x.com
-127.0.0.1   phpmyadmin.dev
-127.0.0.1   adminer.dev
-127.0.0.1   neolegend.dev
+127.0.0.1   	api-dev.com
+127.0.0.1   	prestashop-develop.com
+127.0.0.1   	prestashop-startertheme.com
+127.0.0.1   	prestashop-classic.com
+127.0.0.1   	prestashop-1.6.1.x.com
+127.0.0.1   	phpmyadmin.dev
+127.0.0.1   	neolegend.dev
+127.0.0.1   	tools.dev
+192.168.10.81 tools.berry
 #</dev>
 
 10.2.24.71 v3staging.prestashop.com
-#10.2.24.72 prestashop.com
-#10.2.24.72 www.prestashop.com
+#10.2.24.71 prestashop.com
+#10.2.24.71 www.prestashop.com
