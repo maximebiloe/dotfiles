@@ -101,3 +101,5 @@ Temporary Items
 
 # sftp configuration file
 sftp-config.json
+
+do_assets.sh
