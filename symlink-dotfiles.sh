@@ -40,24 +40,28 @@ done
 if [[ `uname` == 'Darwin' ]]; then
   echo "Linking Apache config"
   # httpd.conf
-  sudo rm "/etc/apache2/httpd.conf.bk"
-  sudo mv "/etc/apache2/httpd.conf" "/etc/apache2/httpd.conf.bk"
-  sulink "$dotfiles/etc/apache2/httpd.conf" "/etc/apache2/httpd.conf"
+  sudo rm "/usr/local/etc/apache2/2.4/httpd.conf.bk"
+  sudo mv "/usr/local/etc/apache2/2.4/httpd.conf" "/usr/local/etc/apache2/2.4/httpd.conf.bk"
+  sulink "$dotfiles/etc/apache2/httpd.conf" "/usr/local/etc/apache2/2.4/httpd.conf"
 
   # extra/ folder
   for location in $(find etc/apache2/extra -name '*.conf'); do
     file="${location##*/}"
     file="${file}"
-    sulink "$dotfiles/$location" "/etc/apache2/extra/$file"
+    sulink "$dotfiles/$location" "/usr/local/etc/apache2/2.4/extra/$file"
   done
+
+  mkdir "/usr/local/etc/apache2/2.4/users/"
 
   # users/ folder
   for location in $(find etc/apache2/users -name '*.conf'); do
     file="${location##*/}"
     file="${file}"
-    sulink "$dotfiles/$location" "/etc/apache2/users/$file"
+    sulink "$dotfiles/$location" "/usr/local/etc/apache2/2.4/users/$file"
   done
 fi
+
+sudo apachectl -k restart
 
 # Vim config
 link "$dotfiles/vim" "$HOME/.vim"

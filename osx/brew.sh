@@ -43,6 +43,7 @@ brew install wget --with-iri
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
+brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
@@ -53,9 +54,19 @@ brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
 
+# Brew Apache
+brew tap homebrew/apache
+brew install httpd24 --with-privileged-ports --with-http2
+sudo apachectl stop
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+sudo cp -v /usr/local/Cellar/httpd24/*/homebrew.mxcl.httpd24.plist /Library/LaunchDaemons
+sudo chown -v root:wheel /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+sudo chmod -v 644 /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+
 # Install PHP and PHP-related tools
 brew tap homebrew/php
-brew install php71 --with-gmp
+brew install php71 --with-httpd24 --with-gmp
 brew install php71-mcrypt
 brew install php71-xdebug
 brew install php71-opcache
