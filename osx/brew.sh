@@ -70,6 +70,7 @@ brew install php71 --with-httpd24 --with-gmp
 brew install php71-mcrypt
 brew install php71-xdebug
 brew install php71-opcache
+brew install php71-intl
 brew install composer
 brew install php-cs-fixer
 brew install wp-cli
