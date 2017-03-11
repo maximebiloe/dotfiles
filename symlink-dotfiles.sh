@@ -70,3 +70,11 @@ touch "$HOME/.vimlocal"
 # Host file
 sudo rm -f /etc/hosts
 sulink "$dotfiles/etc/hosts" "/etc/hosts"
+
+# Atom
+dotfiles="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+e_header "Symlinking Atom config"
+for file in config.cson init.coffee keymap.cson snippets.cson styles.less; do
+  symlink "$dotfiles/atom/$file" "$HOME/.atom/$file"
+done
