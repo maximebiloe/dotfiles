@@ -86,6 +86,7 @@ brew install bfg
 
 # Install nodes
 brew install node
+brew install yarn
 
 # Install completion
 brew tap homebrew/completions
