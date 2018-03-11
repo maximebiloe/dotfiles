@@ -11,14 +11,21 @@ e_note "Remember to update settings"
 e_header "Install must-have packages"
 
 apm install \
-  minimap \
-#  emmet \
+  atom-beautify \
+  autoclose-html \
+  autocomplete-modules \
   editorconfig \
+  file-icons \
+  minimap \
+  minimap-highlight-selected \
+  prettier-atom \
+#  emmet \
 #  highlight-bad-chars
 
 e_header "Install syntax packages"
 
-#apm install \
+apm install \
+  language-babel
 #  ssh-config \
 #  language-twig \
 #  language-blade \
@@ -28,7 +35,7 @@ e_header "Install syntax packages"
 
 e_header "Install linters"
 
-#apm install \
-#  linter \
-#  linter-php \
-#  linter-shellcheck
+apm install \
+  linter \
+  linter-php \
+  linter-eslint
