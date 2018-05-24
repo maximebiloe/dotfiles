@@ -14,11 +14,21 @@ apm install \
   atom-beautify \
   autoclose-html \
   autocomplete-modules \
+  busy-signal \
   editorconfig \
   file-icons \
+  git-blame \
+  git-time-machine \
+  goto-definition \
+  highlight-selected \
+  hyperclick \
+  intentions \
   minimap \
   minimap-highlight-selected \
+  pigments \
   prettier-atom \
+  tester \
+  tester-jest
 #  emmet \
 #  highlight-bad-chars
 
@@ -38,4 +48,5 @@ e_header "Install linters"
 apm install \
   linter \
   linter-php \
-  linter-eslint
+  linter-eslint \ 
+  linter-ui-default
