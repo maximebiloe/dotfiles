@@ -103,3 +103,5 @@ Temporary Items
 sftp-config.json
 
 do_assets.sh
+
+coverage/
