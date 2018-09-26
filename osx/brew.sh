@@ -55,28 +55,28 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Brew Apache
-brew tap homebrew/apache
-brew install httpd24 --with-privileged-ports --with-http2
-sudo apachectl stop
-sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
-sudo cp -v /usr/local/Cellar/httpd24/*/homebrew.mxcl.httpd24.plist /Library/LaunchDaemons
-sudo chown -v root:wheel /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
-sudo chmod -v 644 /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
-sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+# brew tap homebrew/apache
+# brew install httpd24 --with-privileged-ports --with-http2
+# sudo apachectl stop
+# sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist 2>/dev/null
+# sudo cp -v /usr/local/Cellar/httpd24/*/homebrew.mxcl.httpd24.plist /Library/LaunchDaemons
+# sudo chown -v root:wheel /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+# sudo chmod -v 644 /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
+# sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.httpd24.plist
 
 # Install PHP and PHP-related tools
-brew tap homebrew/php
-brew install php71 --with-httpd24 --with-gmp
-brew install php71-mcrypt
-brew install php71-xdebug
-brew install php71-opcache
-brew install php71-intl
-brew install composer
-brew install php-cs-fixer
-brew install wp-cli
+# brew tap homebrew/php
+# brew install php71 --with-httpd24 --with-gmp
+# brew install php71-mcrypt
+# brew install php71-xdebug
+# brew install php71-opcache
+# brew install php71-intl
+# brew install composer
+# brew install php-cs-fixer
+# brew install wp-cli
 
 # Install database management systems
-brew install mysql
+# brew install mysql
 
 # Install git tools
 brew install git
@@ -85,18 +85,18 @@ brew install hub
 brew install bfg
 
 # Install nodes
-brew install node
+# brew install node
 brew install yarn
 
 # Install completion
 brew tap homebrew/completions
 brew install apm-bash-completion
-brew install composer-completion
+# brew install composer-completion
 brew install boot2docker-completion
 brew install brew-cask-completion
 brew install bundler-completion
-brew install vagrant-completion
-brew install wpcli-completion
+# brew install vagrant-completion
+# brew install wpcli-completion
 
 # Install image-related binaries
 brew install exiv2
@@ -118,7 +118,7 @@ brew install ack
 brew install lynx
 brew install pv
 brew install rename
-brew install speedtest_cli
+# brew install speedtest_cli
 brew install ssh-copy-id
 brew install tree
 brew install trash

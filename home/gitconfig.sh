@@ -40,7 +40,7 @@
 
   # Commits
   ci = commit
-  cp = cherry-pick -x
+  cp = cherry-pick
   oops = commit --amend --no-edit
   # Random commit message from whatthecommit.com
   ci-rnd = !sh -c \"git commit -m '$(curl -s http://whatthecommit.com/index.txt)'\"
@@ -124,7 +124,7 @@
   # rebase = true
   # WARNING! This option, which does away with the one gotcha of
   # auto-rebasing on pulls, is only available from 1.8.5 onwards.
-  rebase = preserve
+  rebase = merges
 
 [push]
   default = upstream
@@ -173,8 +173,9 @@
   cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
   trustExitCode = false
 [filter "lfs"]
-  clean = git-lfs clean %f
-  smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
   required = true
+	process = git-lfs filter-process
 [commit]
 	template = /Users/mbiloe/.stCommitMsg

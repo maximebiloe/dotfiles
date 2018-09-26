@@ -136,3 +136,16 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+alias spin="pkill -f spinnaker_tunnel ; ssh -f -N spinnaker_tunnel"
+
+alias gpump="git pull upstream master && git push"
+alias web="cd ~/Projects/weekendesk-web-frontend"
+alias gateway-frontoffice="cd ~/Projects/weekendesk-gateway-frontoffice"
+alias mobile="cd ~/Projects/weekendesk-mobile"
+alias ab-dispatcher="cd ~/Projects/weekendesk-service-ab-dispatcher"
+alias backoffice="cd ~/Projects/weekendesk-web-backoffice"
+alias discovery="cd ~/Projects/weekendesk-web-service-discovery"
+alias localization="cd ~/Projects/weekendesk-web-service-localization"
+alias settings="cd ~/Projects/weekendesk-web-service-settings"
+alias phone-number-validator="cd ~/Projects/wed-service-phone-number-validator"
