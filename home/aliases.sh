@@ -149,3 +149,13 @@ alias discovery="cd ~/Projects/weekendesk-web-service-discovery"
 alias localization="cd ~/Projects/weekendesk-web-service-localization"
 alias settings="cd ~/Projects/weekendesk-web-service-settings"
 alias phone-number-validator="cd ~/Projects/wed-service-phone-number-validator"
+alias client-legacy="cd ~/Projects/wed-client-test-legacy"
+
+alias sshuttle-bastion='sshuttle --dns -r bastion 10/8:443 \
+jenkins.weekendesk.com:443 jenkins2.weekendesk.com:443 spinnaker.weekendesk.com:443-8084 \
+api.prod-k8s.weekendesk.com:443 monitoring-prod-k8s.weekendesk.com:443 \
+api.preprod-k8s.weekendesk.com:443 monitoring-preprod-k8s.weekendesk.com:443 \
+rabbitmq-management.weekendesk.com:443 \
+preprod-rabbitmq-management.weekendesk.com:443'
+
+alias sshuttle-bastion-all='sshuttle --dns -r bastion -x wed-bastion.weekendesk.com 0/0'
