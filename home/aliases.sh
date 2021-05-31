@@ -1,4 +1,4 @@
-colorflag="--color"
+colorflag="-G"
 
 # List all files colorized in long format
 alias l="ls -lhF ${colorflag}"
