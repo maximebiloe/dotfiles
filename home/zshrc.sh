@@ -102,8 +102,13 @@ source ~/.path
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export HOST="macbook-pro-de-maxime-pl"
+
+. /usr/local/opt/asdf/asdf.sh
+export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@12/bin:$PATH"

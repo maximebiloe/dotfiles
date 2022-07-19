@@ -135,4 +135,4 @@ alias reload="exec $SHELL -l"
 alias spin="pkill -f spinnaker_tunnel ; ssh -f -N spinnaker_tunnel"
 
 alias gpump="git pull upstream master && git push"
-alias web="cd ~/Projects/weekendesk-web-frontend"
+alias jeancaisse="cd ~/Projects/jeancaisse"

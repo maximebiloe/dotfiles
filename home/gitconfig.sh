@@ -1,6 +1,6 @@
 [user]
 	name = Maxime Biloé
-	email = maxime.biloe@gmail.com
+	email = maxime@pennylane.com
 
 [github]
   user = maximebiloe
