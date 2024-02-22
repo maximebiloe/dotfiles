@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/maximebiloe/.oh-my-zsh"
+export ZSH="/Users/mbiloe/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -109,6 +109,10 @@ export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export HOST="macbook-pro-de-maxime-pl"
 
-. /usr/local/opt/asdf/asdf.sh
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash
+export PATH="/usr/local/opt/postgresql@14/bin:$PATH"
+# export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+ssh-add --apple-load-keychain > /dev/null 2>&1
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

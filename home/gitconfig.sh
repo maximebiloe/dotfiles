@@ -1,6 +1,7 @@
 [user]
-	name = Maxime Biloé
-	email = maxime@pennylane.com
+	name = Maxime Biloé
+	email = maxime.biloe@gmail.com
+	signingkey = /Users/mbiloe/.ssh/id_ed25519.pub
 
 [github]
   user = maximebiloe
@@ -39,7 +40,7 @@
   latest = "for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short) [%(committername)]'"
 
   # Commits
-  ci = commit
+  ci = commit -S
   cp = cherry-pick
   oops = commit --amend --no-edit
   # Random commit message from whatthecommit.com
@@ -86,7 +87,7 @@
   # Prevent showing files whose names contain non-ASCII symbols as unversioned.
   # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
   precomposeunicode = false
-	excludesfile = /Users/maximebiloe/.gitignore_global
+	excludesfile = /Users/mbiloe/.gitignore_global
 
 [apply]
   # Detect whitespace errors when applying a patch
@@ -127,7 +128,7 @@
   rebase = merges
 
 [push]
-  default = upstream
+	default = current
 
 [rerere]
   # If, like me, you like rerere, decomment these
@@ -179,3 +180,5 @@
 	process = git-lfs filter-process
 [commit]
 	template = /Users/maximebiloe/.stCommitMsg
+[gpg]
+	format = ssh
