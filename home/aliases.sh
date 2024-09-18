@@ -1,5 +1,7 @@
 colorflag="-G"
 
+unalias gsts
+
 # List all files colorized in long format
 alias l="ls -lhF ${colorflag}"
 alias ll="l -a"
